@@ -1,0 +1,18 @@
+{
+  "bullet_points": [
+    {
+      "title": "Here is one of the bullet points.",
+      "image": "https://placehold.co/600x400",
+      "description": "first description."
+    },
+    {
+      "title": "Here is another bullet point.",
+      "image": "https://placehold.co/600x400",
+      "description": "you already understood"
+    },
+    {
+      "title": "Here is 3rd bullet point without description.",
+      "image": "https://placehold.co/600x400"
+    }
+  ]
+}
