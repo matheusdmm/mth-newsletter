@@ -16,7 +16,7 @@ base64Pattern = re.compile(
     r'^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)?$')
 
 htmlContent = ""
-for item in data['bullet_points']:
+for item in data['bulletPoints']:
     htmlContent += f"<p style='padding-left: 60px;'><strong>&bull; {
         item['title']}</strong></p>\n"
     if item.get('description') and item['description'].strip():
@@ -36,7 +36,7 @@ html_content = template.replace(
     '{bullet_points}', htmlContent).replace('{newsletter_title}', newsletterTitle)
 
 
-newsletterName = f'newsletter-{dateToday}.html'
+newsletterName = f'newsletter-{dateToday}-week{week}.html'
 
 with open(f'output/{newsletterName}', 'w', encoding='utf-8') as f:
     f.write(html_content)
