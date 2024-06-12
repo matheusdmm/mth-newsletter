@@ -2,6 +2,7 @@ import json
 import re
 from datetime import datetime
 
+
 now = datetime.now()
 dateToday = now.strftime("%Y-%m-%d")
 week = now.strftime("%U")
