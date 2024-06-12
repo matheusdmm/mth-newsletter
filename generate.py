@@ -24,11 +24,11 @@ for item in data['bullet_points']:
             item['description']}</p>\n"
     if item['image']:
         if base64Pattern.fullmatch(item['image']):
-            htmlContent += f"<p><strong><img style='display: block; margin-left: auto; margin-right: auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: 1px solid #ddd; max-width: 600px; max-height: 400px;' src='data:image/png;base64,{
-                item['image']}' alt='{item['title']}' /></strong></p>\n <br/>"
+            htmlContent += f"<div style='display: block; margin: 0 auto; padding: 0 20px; overflow: hidden;'><img style='display: block; max-width: 600px; max-height: 400px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: 1px solid #ddd;' src='data:image/png;base64,{
+                item['image']}' alt='{item['title']}' /></div>\n <br/>"
         else:
-            htmlContent += f"<p><strong><img style='display: block; margin-left: auto; margin-right: auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: 1px solid #ddd; max-width: 600px; max-height: 400px;' src='{
-                item['image']}' alt='{item['title']}' /></strong></p>\n <br/>"
+            htmlContent += f"<div style='display: block; margin: 0 auto; padding: 0 20px; overflow: hidden;'><img style='display: block; max-width: 600px; max-height: 400px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: 1px solid #ddd;' src='{
+                item['image']}' alt='{item['title']}' /></div>\n <br/>"
 
 
 newsletterTitle = f'DigiCast newsletter - week {week}'
